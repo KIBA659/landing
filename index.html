@@ -2,35 +2,112 @@
 <html lang="uk">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Скульптор</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Скульптор</title>
 </head>
 
 <body>
-  <div>
+
+  <main>
     <div>
-      <img src="img/devochki_prifrontovyh-anime-igry_bilibili-oblako-svet-5120x2880.jpg" height="150" alt="logo">
-    </div>
-    <div>
-      <nav>
-        <a href="#Aboutus">Про нас </a><br>   
-        <a href="#Prise">Ціни </a><br>
-        <a href="#Contags">Контакти </a><br>
-        <a href="#Singup">Реєстрація</a><br>
-      </nav>
-    <dir>
-      <main>
+      <div>
+        <img src="img/devochki_prifrontovyh-anime-igry_bilibili-oblako-svet-5120x2880.jpg" height="215" alt="logo">
+      </div>
+      <div>
+        <nav>
+          <a href="#Aboutus">Про нас </a><br>
+          <a href="#Prise">Ціни </a><br>
+          <a href="#Singup">Реєстрація</a><br>
+          <a href="#Contags">Контакти </a><br>
+        </nav>
+      </div>
+      <hr>
+      <div>
         <h2 id="Aboutus">Скульптор</h2>
-        
-      </main>
-    </dir>
+        <p>
+          Наш спортивний комплекс старається максимально відповідати усім потребам i вимогам наших відвідувачів.<br>
+          СК "Скульптор" відповідає усім вимогам норм та правил спортивних залів європейського рівня. Саме це i було
+          <br>
+          першочерговим завданням при створенні закладу - створити умови, в яких буде можливість займатися з комфортом
+          <br>
+          i у власне задоволення, адже ми всі достойні найкращого. В нашому залі ви, врешті, маєте таку можливість -
+          вас <br>
+          зустрінуть з посмішкою i ознайомлять з нашими обладнанням та тренерами, які в свою чергу, старатимуться
+          зробити <br>
+          все для вашого ефективного i безпечного перевтілення в нову покращену версію себе самого.
+        </p>
+      </div>
+      <hr>
+      <div>
+        <h2 id="Prise">Ціни</h2>
+      </div>
+      <div>
+        <table>
+          <thead>
+            <tr>
+              <th>----</th>
+              <th scope="col">З тренером</th>
+              <th scope="col">Без</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Ранкові</th>
+              <td>350</td>
+              <td>250</td>
+            </tr>
+            <tr>
+              <th scope="row">Обідні</th>
+              <td>300</td>
+              <td>200</td>
+            </tr>
+            <tr>
+              <th scope="row">Вечірні</th>
+              <td>500</td>
+              <td>300</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <hr>
+      <div>
+        <h2 id="Singup">Реєстрація</h2>
+      </div>
+      <div>
+        <form action="">
+          <div>
+            <label for="name">Імя</label>
+            <input type="text">
+          </div>
+          <div>
+            <label for="sname">Прізвище</label>
+            <input type="text">
+          </div>
+          <div>
+            <label for="number">Телефон</label>
+           <input type="tel">
+          </div>
+          <div>
+            <label for="email">Пошта</label>
+            <input type="email" name="email" id="email">
+          </div>
+          <div>
+            <label for="choice">Тариф</label>
+            <select>
+              <option value="morninwith">Ранкові з тренером</option>
+              <option value="morninwithout">Ранкові без</option>
+              <option value="daywith">Обідні з тренером</option>
+              <option value="daywithout">Обідні без</option>
+              <option value="nightwith">Вечірні з тренером</option>
+              <option value="nightthout">Вечірні без</option>
+            </select>
+          </div>
+        </form>
+      </div>
     </div>
-  </div>  
-</div>
-    
-   
+  </main>
 </body>
 
 </html>
