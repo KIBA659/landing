@@ -10,121 +10,153 @@
 
 <body>
 
-  <main>
+  <header>
     <div>
       <div>
         <img src="img/devochki_prifrontovyh-anime-igry_bilibili-oblako-svet-5120x2880.jpg" height="215" alt="logo">
       </div>
       <div>
         <nav>
-          <a href="#Aboutus">Про нас </a><br>
-          <a href="#Prise">Ціни </a><br>
-          <a href="#Singup">Реєстрація</a><br>
-          <a href="#Сontacts">Контакти </a><br>
+          <ul>
+            <li><a href="#Aboutus">Про нас </a><br></li>
+            <li><a href="#Prise">Ціни </a><br></li>
+            <li><a href="#Singup">Реєстрація</a><br></li>
+            <li><a href="#Сontacts">Контакти </a><br></li>
+          </ul>
         </nav>
       </div>
-      <hr>
-      <div>
-        <h2 id="Aboutus">Скульптор</h2>
-        <p>
-          Наш спортивний комплекс старається максимально відповідати усім потребам i вимогам наших відвідувачів.<br>
-          СК "Скульптор" відповідає усім вимогам норм та правил спортивних залів європейського рівня. Саме це i було
-          <br>
-          першочерговим завданням при створенні закладу - створити умови, в яких буде можливість займатися з комфортом
-          <br>
-          i у власне задоволення, адже ми всі достойні найкращого. В нашому залі ви, врешті, маєте таку можливість -
-          вас <br>
-          зустрінуть з посмішкою i ознайомлять з нашими обладнанням та тренерами, які в свою чергу, старатимуться
-          зробити <br>
-          все для вашого ефективного i безпечного перевтілення в нову покращену версію себе самого.
-        </p>
-      </div>
-      <hr>
-      <div>
-        <h2 id="Prise">Ціни</h2>
-      </div>
-      <div>
-        <table>
-          <thead>
-            <tr>
-              <th>----</th>
-              <th scope="col">З тренером</th>
-              <th scope="col">Без</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">Ранкові</th>
-              <td>350</td>
-              <td>250</td>
-            </tr>
-            <tr>
-              <th scope="row">Обідні</th>
-              <td>300</td>
-              <td>200</td>
-            </tr>
-            <tr>
-              <th scope="row">Вечірні</th>
-              <td>500</td>
-              <td>300</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <hr>
-      <div>
-        <h2 id="Singup">Реєстрація</h2>
-      </div>
-      <div>
-        <form action="">
-
+    </div>
+  </header>
+  <main>
+    <div>
+      <h2 id="Aboutus">Скульптор</h2>
+      <p>
+        Наш спортивний комплекс старається максимально відповідати усім потребам i вимогам наших відвідувачів.<br>
+        СК "Скульптор" відповідає усім вимогам норм та правил спортивних залів європейського рівня. Саме це i було
+        <br>
+        першочерговим завданням при створенні закладу - створити умови, в яких буде можливість займатися з комфортом
+        <br>
+        i у власне задоволення, адже ми всі достойні найкращого. В нашому залі ви, врешті, маєте таку можливість -
+        вас <br>
+        зустрінуть з посмішкою i ознайомлять з нашими обладнанням та тренерами, які в свою чергу, старатимуться
+        зробити <br>
+        все для вашого ефективного i безпечного перевтілення в нову покращену версію себе самого.
+      </p>
+    </div>
+    <hr>
+    <div>
+      <h2 id="Price">Ціни</h2>
+    </div>
+    <div>
+      <table>
+        <thead>
+          <tr>
+            <th>----</th>
+            <th scope="col">З тренером</th>
+            <th scope="col">Без</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Ранкові</th>
+            <td>350</td>
+            <td>250</td>
+          </tr>
+          <tr>
+            <th scope="row">Обідні</th>
+            <td>300</td>
+            <td>200</td>
+          </tr>
+          <tr>
+            <th scope="row">Вечірні</th>
+            <td>500</td>
+            <td>300</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <hr>
+    <div>
+      <h2 id="Singup">Реєстрація</h2>
+    </div>
+    <div>
+      <form action="https://formspree.io/f/xgebebaa" method="POST">
+        <fieldset>
+          <legend>Sign in</legend>
           <label for="name"></label>
-          <input type="text" placeholder="Iм'я">
+          <input type="text" id="name" name="name" placeholder="Iм'я">
           <br>
-
           <label for="sname"></label>
-          <input type="text" placeholder="Прізвище">
+          <input type="text" id="sname" name="sname" placeholder="Прізвище">
           <br>
           <label for="number"></label>
-          <input type="tel" placeholder="Телефон">
+          <input type="tel" id="number" name="tel" placeholder="Телефон" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
           <br>
           <label for="email"></label>
           <input type="email" name="email" id="email" placeholder="Пошта">
           <br>
-          <label for="choice">Тариф</label>
-          <select>
-            <option value="morninwith">Ранкові з тренером</option>
-            <option value="morninwithout">Ранкові без</option>
-            <option value="daywith">Обідні з тренером</option>
-            <option value="daywithout">Обідні без</option>
-            <option value="nightwith">Вечірні з тренером</option>
-            <option value="nightthout">Вечірні без</option>
-          </select>
+          <p>Тариф</p>
+          <div>
+            <input type="radio" id="choice-b" name="choice" value="Ранкові з тренером">
+            <label for="choice-b">Ранкові з тренером</label>
+          </div>
+          <div>
+            <input type="radio" id="choice-n" name="choice" value="Ранкові без">
+            <label for="choice-n">Ранкові без</label>
+          </div>
+          <div>
+            <input type="radio" id="choice-m"  name="choice" value="Обідні з тренером">
+            <label for="choice-m">Обідні з тренером</label>
+          </div>
+          <div>
+            <input type="radio" id="choice-t"  name="choice" value="Обідні без">
+            <label for="choice-t">Обідні без</label>
+          </div>
+          <div>
+            <input type="radio" id="choice-o"  name="choice" value="Вечірні з тренером">
+            <label for="choice-o">Вечірні з тренером</label>
+          </div>
+          <div>
+            <input type="radio" id="choice-i" name="choice" value="Вечірні без" >
+            <label for="choice-i">Вечірні без</label>
+          </div>
+
+          <!-- <select>
+              <option value="morninwith">Ранкові з тренером</option>
+              <option value="morninwithout">Ранкові без</option>
+              <option value="daywith">Обідні з тренером</option>
+              <option value="daywithout">Обідні без</option>
+              <option value="nightwith">Вечірні з тренером</option>
+              <option value="nightthout">Вечірні без</option>
+            </select>-->
           <br>
-         <input type="button" value="Зареєструватися">
-        </form>
-      </div>
-      <hr>
-      <div>
-        <h2 id="Сontacts">Контакти</h2>
-        <a href="http://www.instagram.com/sk_skulptor/" target="_blank"><img src="img/instagramlogo.png" height="25"
-          width="25" alt="logo instagram"></a>
-        <a href="https://www.youtube.com/" target="_blank"> <img src="img/youtube-logo-png-116186698684etjs0nnhw.png"
-            height="25" width="25" alt="logo youtube"> </a>
-        <p>
-          м.Сокаль, вул.Шептицького 93,80001,<br>
-          Львівська обл.,Україна<br>
-          Вхід з двору (від церкви) <br>
-        </p>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10155.990377800623!2d24.2782077!3d50.4783885!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8666ebc3e0545f52!2z0KHQv9C-0YDRgtC60L7QvNC_0LvQtdC60YEgwqvQodC60YPQu9GM0L_RgtC-0YDCuw!5e0!3m2!1suk!2sua!4v1673117510817!5m2!1suk!2sua"
-          width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-      </div>
-      <hr>
+          <input type="submit" value="Зареєструватися">
+        </fieldset>
+      </form>
     </div>
+    <hr>
   </main>
+  <footer>
+    <div>
+      <h2 id="Сontacts">Контакти</h2>
+      <a href="http://www.instagram.com/sk_skulptor/" target="_blank"><img src="img/instagramlogo.png" height="25"
+          width="25" alt="logo instagram"></a>
+      <a href="https://www.youtube.com/" target="_blank"> <img src="img/youtube-logo-png-116186698684etjs0nnhw.png"
+          height="25" width="25" alt="logo youtube"> </a>
+      <p>
+        м.Сокаль, вул.Шептицького 93,80001,<br>
+        Львівська обл.,Україна<br>
+        Вхід з двору (від церкви) <br>
+      </p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10155.990377800623!2d24.2782077!3d50.4783885!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8666ebc3e0545f52!2z0KHQv9C-0YDRgtC60L7QvNC_0LvQtdC60YEgwqvQodC60YPQu9GM0L_RgtC-0YDCuw!5e0!3m2!1suk!2sua!4v1673117510817!5m2!1suk!2sua"
+        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+    <hr>
+  </footer>
+
 </body>
 
 </html>
