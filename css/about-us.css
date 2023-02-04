@@ -1,0 +1,9 @@
+.main__about__us__container{
+    max-width: 380px;
+    display: flex;
+    gap: 30px;
+}
+.container__about__us{}
+.about__us__img{}
+.about__us__title{}
+.about__us__sub_title{}

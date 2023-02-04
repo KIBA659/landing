@@ -1,0 +1,25 @@
+.header{}
+.header__container{
+    background-color:rgb(256,256,256);
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    min-height: 152px;
+}
+.header__logo{
+    width: 25px;
+}
+.header__logo__img{
+    width:100%;
+}
+.header__nav{
+    display: flex;
+    gap: 25px;
+}
+.nav__section{
+    color: black;
+}
+.theme{
+    cursor: pointer;
+}
+.changeTheme{}

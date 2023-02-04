@@ -1,0 +1,12 @@
+.header__container{
+    background-color:rgb(256,256,256);
+}
+.nav__section{
+    color:rgb(0, 0, 0);
+}
+.changeTheme[data-theme="light"]{
+    display: none;
+}
+.changeTheme[data-theme="dark"]{
+    display: block;
+}
