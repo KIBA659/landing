@@ -4,6 +4,10 @@
 .nav__section{
     color: rgb(255, 255, 255);
 }
+html,body {
+    background-color: var(--color-light);
+}
+
 .changeTheme[data-theme="light"]{
     display: block;
 }

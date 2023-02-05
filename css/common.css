@@ -1,14 +1,22 @@
-html , body{
+:root {
+    --color-light: rgb(0, 0, 0);
+    --color-dark: rgb(255, 255, 255);
+}
+
+html,body {
+    background-color: var(--color-light);
     margin: 0px;
     padding: 0px;
     height: 100%;
     min-width: 320px;
 }
-.main{
+
+.main {
     flex: 1 1 auto;
     flex-direction: column;
 }
-[class*="__container"]{
+
+[class*="__container"] {
     max-width: 1230px;
     margin: 0 auto;
     padding: 0 15px;

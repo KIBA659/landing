@@ -1,22 +1,38 @@
-.name__photo__container{
+.name__photo__container {
     min-width: 1200px;
     max-height: 700px;
-    background-image:url("../img/gym_phone.jfif");
+    background-image: url("../img/gym_phone.jfif");
+    background-position: 50% 50%;
     background-size: cover;
     filter: grayscale(0.1)
 }
-.name__photo__container:hover{
-    filter: saturate(300%);
+
+.name__photo__container:hover {
+    filter: saturate(150%);
 }
-.name__photo__title{
+
+.name__photo__title {
     margin: 0;
     min-width: 1200px;
     min-height: 700px;
     font-size: 56px;
     display: flex;
     align-items: center;
-    justify-items: center;
     justify-content: center;
-    color: rgb(256,256,256);
+    color: rgb(34, 34, 34);
+}
 
+@media (min-width: 280px) {
+    .name__photo__container {
+        min-width: 280px;
+        max-height: 300px;
+        background-image: url("../img/gym_phone2.jfif");
+        
+    }
+    .name__photo__title{
+        min-width: 280px;
+        min-height: 300px;
+        font-size: 29px;
+        
+    }
 }

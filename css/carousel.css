@@ -1,0 +1,27 @@
+.arrow__svg__prev {
+    transform: rotate(180deg);
+}
+
+.main__carousel__container {
+    padding: 0 5px;
+    display: grid;
+    grid-template-columns: 25px 1fr 25px;
+    justify-content: center;
+    align-items: center;
+    min-height: 350px;
+}
+
+.main__caroysel__box {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height:auto;
+}
+
+.carousel__price {
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15%;
+}
