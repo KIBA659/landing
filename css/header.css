@@ -1,10 +1,17 @@
 .header {}
 
+.header__clock {
+    color: var(--color-dark);
+    display: none;
+    padding-right:25px ;
+}
+
 .header__container {
     background-color: var(--color-light);
     display: flex;
-    gap: 25px;
+    gap: 10%;
     align-items: center;
+    justify-content: space-between;
     min-height: 152px;
 }
 
@@ -34,12 +41,25 @@
     .header__container {
         gap: 15px;
     }
-
     .header__nav {
         gap: 10px;
     }
 
+
     .header__logo {
         display: none;
+    }
+}
+
+@media (min-width: 500px) {
+    .header__nav {
+        gap: 10px;
+    }
+    .header__logo {
+        display: block;
+    }
+
+    .header__clock {
+        display: block;
     }
 }

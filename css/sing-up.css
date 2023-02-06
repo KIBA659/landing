@@ -5,11 +5,17 @@
     grid-template-columns: 1fr 1fr;
 }
 
+.containern__order__img {
+    padding-left: 5%;
+}
+
 .containern__order__tittle {
     color: var(--color-dark);
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    padding-left: 5%;
 }
 
 .containern__order__photo {
@@ -24,52 +30,50 @@
 .containern__order {
     display: flex;
     flex-direction: column;
-    min-width: 100px; 
+    min-width: 100px;
     max-width: 500px;
     justify-content: center;
     align-items: center;
+    padding-top: 35px;
+
 }
 
 .singup {
-    /* border-radius: 25px;
-    margin-bottom: 24px;
-    margin-top: 12px;
-    border-style: solid;
-    display: block;
-    justify-content: center;
-    padding: 13px 37px 13px 37px;
-    color: var(--color-dark);
-    font-family: 'Rubik', serif; */
     display: flex;
     justify-content: center;
     align-items: center;
     min-width: 256px;
-    /* margin: 15px;
-    border: 1px solid var(--color-dark);
-    border-radius: 55px;
-    background-color: var(--color-dark); */
+    margin-bottom: 10px;
 }
-/* .singup_input{
-    padding-left: 37px;
-} */
+
+.text__box {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 input[type=submit],
 input[type=email],
 input[type=tel],
 input[type=text] {
     text-align: center;
-    padding: 13px 0px 13px 0px;
+    padding: 10px 0px 10px 0px;
     border: 1px solid var(--color-dark);
     border-radius: 55px;
     background-color: var(--color-dark);
     margin-bottom: 10px;
 }
-input[type=submit]{
-    background-color:coral;
+
+input[type=submit] {
+    background-color: coral;
 }
-input{
+
+input {
     max-width: 256px;
 }
-select{
+
+select {
     text-align: center;
     margin-bottom: 10px;
     border: none;
@@ -78,13 +82,14 @@ select{
     border-radius: 55px;
     background-color: var(--color-dark);
 }
-input{
+
+input {
     width: 100%;
 }
 
 
 @media (min-width: 280px) {
-    .containern__order__img {
+    .containern__order__tittle {
         display: none;
     }
 
@@ -100,7 +105,7 @@ input{
 }
 
 @media (min-width: 650px) {
-    .containern__order__img {
+    .containern__order__tittle {
         display: block;
     }
 
