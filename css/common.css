@@ -3,7 +3,8 @@
     --color-dark: rgb(255, 255, 255);
 }
 
-html,body {
+html,
+body {
     background-color: var(--color-light);
     margin: 0px;
     padding: 0px;

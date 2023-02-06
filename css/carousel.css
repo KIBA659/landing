@@ -1,9 +1,16 @@
 .arrow__svg__prev {
     transform: rotate(180deg);
+    border:1px solid var(--color-dark);
+    border-radius: 50%;
+    background-color: var(--color-dark);
 }
-
+.arrow__svg__next{
+    border:1px solid var(--color-dark);
+    border-radius: 50%;
+    background-color: var(--color-dark);
+}
 .main__carousel__container {
-    padding: 0 5px;
+    background-color: var(--color-light);
     display: grid;
     grid-template-columns: 25px 1fr 25px;
     justify-content: center;
@@ -14,8 +21,17 @@
 .main__caroysel__box {
     display: flex;
     flex-direction: column;
-    width:100%;
-    height:auto;
+    justify-content: center;
+    padding: 4px;
+    width: 100%;
+    height: auto;
+}
+
+.carousel__item {
+    color: var(--color-dark);
+    margin: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
 }
 
 .carousel__price {
@@ -23,5 +39,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15%;
+    gap: 10%;
+}
+.caroysel__box__item{
+    padding-left: 15px;
+}
+.caroysel__box__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel__href {
+    text-decoration: none;
+    color: var(--color-light);
+    min-width: 150px;
+    min-height: 25px;
+    background-color: coral;
+    margin: 0px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

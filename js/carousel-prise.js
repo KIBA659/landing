@@ -4,7 +4,7 @@
             id: "Ранкові",
             time: "до 12:00",
             timeforweek: "3",
-            period: "1 month",
+            period: "1",
             prisewithcoach: "1370",
             prisewithoutcoach: "370",
         },
@@ -12,7 +12,7 @@
             id: "Обідні",
             time: "від 12:00 до 16:00",
             timeforweek: "3",
-            period: "1 month",
+            period: "1",
             prisewithcoach: "1340",
             prisewithoutcoach: "340",
         },
@@ -20,7 +20,7 @@
             id: "Денні",
             time: "від 16:00 до 18:00",
             timeforweek: "3",
-            period: "1 month",
+            period: "1",
             prisewithcoach: "1410",
             prisewithoutcoach: "410",
         },
@@ -28,7 +28,7 @@
             id: "Вечірні",
             time: "від 18:00 до 22:00",
             timeforweek: "3",
-            period: "1 month",
+            period: "1",
             prisewithcoach: "1450",
             prisewithoutcoach: "450",
         },
@@ -36,7 +36,7 @@
             id: "Безлімітні",
             time: "від 8:00 до 22:00",
             timeforweek: "∞",
-            period: "1 month",
+            period: "1",
             prisewithcoach: "1520",
             prisewithoutcoach: "520",
         },
@@ -47,12 +47,17 @@
         for (const prisebox of priseboxs) {
             slidesArray.push(
                 `<div class="main__caroysel__box">
-            <h2 class="carousel__tittle">${prisebox.id}</h2>
-            <p class="carousel__time">${prisebox.time}</p>
-            <p class="carousel__timeforweek">${prisebox.timeforweek}</p>
-            <p class="carousel__period">${prisebox.period}</p>
-            <p class="carousel__prisewithcoach">${prisebox.prisewithcoach}</p>
-            <p class="carousel__prisewithoutcoach">${prisebox.prisewithoutcoach}</p>
+               <div class="caroysel__box__item">
+            <h2 class="carousel__item carousel__tittle">${prisebox.id}</h2>
+            <p class="carousel__item carousel__time">Час: ${prisebox.time}</p>
+            <p class="carousel__item carousel__timeforweek">Кількість зазів на тиждень: ${prisebox.timeforweek}</p>
+            <p class="carousel__item carousel__period">Період: ${prisebox.period} місяць</p>
+            <p class="carousel__item carousel__prisewithcoach">З тренером: ${prisebox.prisewithcoach} грн</p>
+            <p class="carousel__item carousel__prisewithoutcoach">Без тренера: ${prisebox.prisewithoutcoach} грн</p>
+            </div>
+            <div class="caroysel__box__button">
+            <a class="carousel__item carousel__href" href="#Singup">Купити</a>
+            </div>
             </div>`
             )
         }
@@ -99,5 +104,5 @@
         currentSlideIdx = currentSlideIdx - 1 < 0 ? slidesArray.length - 1 : currentSlideIdx - 1;
         rendercarousel();
     })
-
+    
 })()

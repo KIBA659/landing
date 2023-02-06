@@ -23,6 +23,7 @@
 
 .nav__section {
     color: var(--color-light);
+    text-decoration: none;
 }
 
 .theme {

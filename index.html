@@ -76,7 +76,7 @@
             <use fill-rule="nonzero" opacity=".8" xlink:href="#a-1672937858756"></use>
           </svg>
         </div>
-        <div class="carousel__price"></div>
+        <div class="carousel__price" id="Prise"></div>
         <div class="button__gallery__next">
           <svg class="arrow__svg__next" viewBox="0 0 30 30">
             <defs>
@@ -88,56 +88,55 @@
           </svg>
         </div>
       </div>
+      <div class="main__order__container" id="Singup">
 
+        <div class="containern__order__img">
+          <div class="containern__order__tittle">879456213</div>
+          <div class="containern__order__photo">
+            <img class="order__photo" src="img/gym_phone2.jfif" alt="">
+          </div>
+        </div>
+
+
+
+
+        <div class="containern__order">
+          <form action="https://formspree.io/f/xgebebaa" method="POST">
+            <div class="singup" class="singup_input" >
+              <!-- <label for="name"></label> -->
+              <input type="text" id="name" name="name" placeholder="Iм'я" required>
+            </div>
+            <div class="singup" class="singup_input">
+              <!-- <label for="sname"></label> -->
+              <input type="text" id="sname" name="sname" placeholder="Прізвище" required>
+            </div>
+            <div class="singup" class="singup_input">
+              <!-- <label for="number"></label> -->
+              <input type="tel" id="number" name="tel" placeholder="Телефон:+380" required>
+            </div>
+            <div class="singup" class="singup_input">
+              <!-- <label for="email"></label> -->
+              <input type="email" name="email" id="email" placeholder="Пошта" required>
+            </div>
+            <div class="singup">
+              <select class="singup"  class="select">
+                <option value="morninwith">Ранкові з тренером</option>
+                <option value="morninwithout">Ранкові без</option>
+                <option value="daywith">Обідні з тренером</option>
+                <option value="daywithout">Обідні без</option>
+                <option value="nightwith">Вечірні з тренером</option>
+                <option value="nightthout">Вечірні без</option>
+              </select>
+            </div>
+            <div class="singup">
+              <input type="submit" name="submit" id="submit" value="Зареєструватися">
+            </div>
+          </form>
+        </div>
+
+      </div>
 
       <!-- <div>
-      <h2 id="Aboutus">Скульптор</h2>
-      <p>
-        Наш спортивний комплекс старається максимально відповідати усім потребам i вимогам наших відвідувачів.<br>
-        СК "Скульптор" відповідає усім вимогам норм та правил спортивних залів європейського рівня. Саме це i було
-        <br>
-        першочерговим завданням при створенні закладу - створити умови, в яких буде можливість займатися з комфортом
-        <br>
-        i у власне задоволення, адже ми всі достойні найкращого. В нашому залі ви, врешті, маєте таку можливість -
-        вас <br>
-        зустрінуть з посмішкою i ознайомлять з нашими обладнанням та тренерами, які в свою чергу, старатимуться
-        зробити <br>
-        все для вашого ефективного i безпечного перевтілення в нову покращену версію себе самого.
-      </p>
-    </div>
-    <hr>
-    <div>
-      <h2 id="Price">Ціни</h2>
-    </div>
-    <div>
-      <table>
-        <thead>
-          <tr>
-            <th>----</th>
-            <th scope="col">З тренером</th>
-            <th scope="col">Без</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">Ранкові</th>
-            <td>350</td>
-            <td>250</td>
-          </tr>
-          <tr>
-            <th scope="row">Обідні</th>
-            <td>300</td>
-            <td>200</td>
-          </tr>
-          <tr>
-            <th scope="row">Вечірні</th>
-            <td>500</td>
-            <td>300</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <hr>
     <div>
       <h2 id="Singup">Реєстрація</h2>
     </div>
