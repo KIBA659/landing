@@ -77,12 +77,12 @@
       <div class="main__carousel__container">
         <div class="button__gallery__prev">
           <svg class="arrow__svg__prev" viewBox="0 0 30 30">
-            <defs>
+            <defs class="arrow__prew">
               <path
                 d="M19.533 15l-9.1-9.45c-.577-.6-.577-1.5 0-2.1.578-.6 1.445-.6 2.023 0l10.11 10.5c.29.3.434.75.434 1.05 0 .45-.144.75-.433 1.05l-10.111 10.5c-.29.3-.578.45-1.012.45-.433 0-.722-.15-1.01-.45-.578-.6-.578-1.5 0-2.1l9.1-9.45z"
                 id="a-1672937858755"></path>
             </defs>
-            <use fill-rule="nonzero" opacity=".8" xlink:href="#a-1672937858756"></use>
+            <use class="arrow__prew" fill-rule="nonzero" opacity=".8" xlink:href="#a-1672937858756"></use>
           </svg>
         </div>
         <div class="carousel__price" id="Prise"></div>
@@ -108,23 +108,23 @@
         <div class="containern__order">
           <form action="https://formspree.io/f/xgebebaa" method="POST">
             <div class="singup" class="singup_input">
-              <!-- <label for="name"></label> -->
+
               <input type="text" id="name" name="name" placeholder="Iм'я" required>
             </div>
             <div class="singup" class="singup_input">
-              <!-- <label for="sname"></label> -->
+
               <input type="text" id="sname" name="sname" placeholder="Прізвище" required>
             </div>
             <div class="singup" class="singup_input">
-              <!-- <label for="number"></label> -->
+
               <input type="tel" id="number" name="tel" placeholder="Телефон:+380" required>
             </div>
             <div class="singup" class="singup_input">
-              <!-- <label for="email"></label> -->
+
               <input type="email" name="email" id="email" placeholder="Пошта" required>
             </div>
             <div class="singup">
-              <select class="singup" class="select">
+              <select class="singup-option" class="select">
                 <option value="morninwith">Ранкові з тренером</option>
                 <option value="morninwithout">Ранкові без</option>
                 <option value="daywith">Обідні з тренером</option>
@@ -142,7 +142,7 @@
 
     </main>
 
-    <footer>
+    <footer class="footer">
       <div class="contacts__container">
         <div class="contacts__body">
           <div class="ff">

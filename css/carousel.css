@@ -1,16 +1,13 @@
 .arrow__svg__prev {
     transform: rotate(180deg);
-    border:1px solid var(--color-dark);
     border-radius: 50%;
-    background-color: var(--color-dark);
 }
-.arrow__svg__next{
-    border:1px solid var(--color-dark);
+
+.arrow__svg__next {
     border-radius: 50%;
-    background-color: var(--color-dark);
 }
+
 .main__carousel__container {
-    background-color: var(--color-light);
     display: grid;
     grid-template-columns: 25px 1fr 25px;
     justify-content: center;
@@ -28,7 +25,11 @@
 }
 
 .carousel__item {
-    color: var(--color-dark);
+    margin: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+.carousel__href{
     margin: 10px;
     font-family: 'Times New Roman', Times, serif;
     font-size: larger;
@@ -41,9 +42,11 @@
     align-items: center;
     gap: 10%;
 }
-.caroysel__box__item{
+
+.caroysel__box__item {
     padding-left: 15px;
 }
+
 .caroysel__box__button {
     display: flex;
     justify-content: center;
@@ -55,7 +58,7 @@
     color: var(--color-light);
     min-width: 150px;
     min-height: 25px;
-    background-color: coral;
+    background-color: var(--color-orange);
     margin: 0px;
     border-radius: 50px;
     display: flex;

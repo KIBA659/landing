@@ -1,16 +1,120 @@
-.header__container{
-    background-color:rgb(256,256,256);
-}
-.nav__section{
-    color:rgb(0, 0, 0);
-}
-html,body {
+html,
+body {
     background-color: var(--color-dark);
 }
 
-.changeTheme[data-theme="light"]{
+.header {
+    background-color: var(--color-dark);
+}
+
+.main {
+    background-color: var(--color-dark);
+}
+
+.footer {
+    background-color: var(--color-dark);
+}
+
+.header__container {
+    background-color: var(--color-dark);
+}
+
+.header__logo__img {
+    border: 1 px solid var(--color-light);
+}
+
+.carousel__href {
+    color: var(--color-light);
+}
+
+.nav__section {
+    color: var(--color-light);
+}
+
+.header__clock {
+    color: var(--color-light);
+}
+
+.main__about__container {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}
+
+.main__about__us__container {
+    background-color: var(--color-dark);
+}
+
+.container__about__us {
+    border: 1px solid var(--color-light);
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, .99);
+}
+
+.about__us__title {
+    color: var(--color-light);
+}
+
+.about__us__sub_title {
+    color: var(--color-light);
+}
+
+.main__carousel__container {
+    background-color: var(--color-dark);
+}
+
+.carousel__item {
+    color: var(--color-dark);
+}
+
+.arrow__svg__prev {
+    border: 1px solid var(--color-light);
+    background-color: var(--color-dark);
+}
+
+.arrow__svg__next {
+    border: 1px solid var(--color-light);
+    background-color: var(--color-dark);
+}
+
+.carousel__item {
+    color: var(--color-light);
+}
+
+.main__order__container {
+    background-color: var(--color-dark);
+}
+
+.containern__order__tittle {
+    color: var(--color-light);
+}
+
+select {
+    border: 1px solid var(--color-light);
+    background-color: var(--color-dark);
+}
+
+.contacts__container {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}
+
+.img__logo {
+    border: 1px solid var(--color-light);
+    background-color: var(--color-dark);
+}
+
+.line__container {
+    border: 1px solid var(--color-light);
+}
+
+.under__line__container {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}
+
+.changeTheme[data-theme="light"] {
     display: none;
 }
-.changeTheme[data-theme="dark"]{
+
+.changeTheme[data-theme="dark"] {
     display: block;
 }

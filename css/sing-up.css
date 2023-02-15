@@ -1,5 +1,4 @@
 .main__order__container {
-    background-color: var(--color-light);
     display: grid;
     gap: 13%;
     grid-template-columns: 1fr 1fr;
@@ -59,14 +58,14 @@ input[type=tel],
 input[type=text] {
     text-align: center;
     padding: 10px 0px 10px 0px;
-    border: 1px solid var(--color-dark);
+    border: 1px solid var(--color-light);
     border-radius: 55px;
-    background-color: var(--color-dark);
+    /* background-color: var(--color-dark); */
     margin-bottom: 10px;
 }
 
 input[type=submit] {
-    background-color: coral;
+    background-color:var(--color-orange);
 }
 
 input {

@@ -1,15 +1,17 @@
 :root {
     --color-light: rgb(0, 0, 0);
     --color-dark: rgb(255, 255, 255);
+    --color-orange: #ff7f50;
 }
 
-html{
+html {
     background-color: var(--color-light);
     margin: 0px;
     padding: 0px;
     height: 100%;
     min-width: 320px;
 }
+
 /* *{
     border: 1px solid red;
 } */

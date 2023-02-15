@@ -1,13 +1,9 @@
-.header {}
-
 .header__clock {
-    color: var(--color-dark);
     display: none;
-    padding-right:25px ;
+    padding-right: 25px;
 }
 
 .header__container {
-    background-color: var(--color-light);
     display: flex;
     gap: 10%;
     align-items: center;
@@ -21,6 +17,7 @@
 
 .header__logo__img {
     width: 100%;
+    border-radius: 50%;
 }
 
 .header__nav {
@@ -29,7 +26,6 @@
 }
 
 .nav__section {
-    color: var(--color-light);
     text-decoration: none;
 }
 
@@ -41,6 +37,7 @@
     .header__container {
         gap: 15px;
     }
+
     .header__nav {
         gap: 10px;
     }
@@ -55,6 +52,7 @@
     .header__nav {
         gap: 10px;
     }
+
     .header__logo {
         display: block;
     }

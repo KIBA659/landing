@@ -56,7 +56,7 @@
             <p class="carousel__item carousel__prisewithoutcoach">Без тренера: ${prisebox.prisewithoutcoach} грн</p>
             </div>
             <div class="caroysel__box__button">
-            <a class="carousel__item carousel__href" href="#Singup">Купити</a>
+            <a class=" carousel__href" href="#Singup">Купити</a>
             </div>
             </div>`
             )
