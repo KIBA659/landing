@@ -31,6 +31,10 @@ body {
     color: var(--color-light);
 }
 
+.nav__section::before {
+    background-color: var(--color-light);
+}
+
 .header__clock {
     color: var(--color-light);
 }

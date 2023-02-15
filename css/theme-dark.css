@@ -23,6 +23,10 @@ body {
     color: var(--color-dark);
 }
 
+.nav__section::before {
+    background-color: var(--color-dark);
+}
+
 .main__about__container {
     background-color: var(--color-light);
     color: var(--color-dark);
